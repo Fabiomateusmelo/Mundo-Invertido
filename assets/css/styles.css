@@ -64,7 +64,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  transition: 1s;
+  transition: 1s ease;
 }
 
 body {
@@ -327,6 +327,9 @@ section {
 
 #section-form .form-content h3 {
   color: var(--highlight-color);
+  width: 30%;
+  text-align: left;
+  margin: 0;
 }
 
 #section-form .form-content h3 span {
@@ -339,11 +342,6 @@ section {
   align-items: center;
 }
 
-#section-form .form-content h3 {
-  flex-basis: 30%;
-  text-align: left;
-  margin: 0;
-}
 
 #section-form .form-container {
   flex-basis: 50%;
