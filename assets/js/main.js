@@ -1,3 +1,5 @@
+import { subscribeToHellfireClub } from './firebase/hellfire-club.js'
+
 const txtName = document.getElementById('txtName')
 const txtEmail = document.getElementById('txtEmail')
 const txtLevel = document.getElementById('txtLevel')
@@ -12,6 +14,5 @@ document.getElementById('btnSubscribe').addEventListener('click', () => {
     level: txtLevel.value,
     character: txtCharacter.value
   }
-  console.log(subscribe)
+  subscribeToHellfireClub(subscribe)
 })
-
