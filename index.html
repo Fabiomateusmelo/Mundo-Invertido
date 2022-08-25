@@ -99,20 +99,20 @@
           <h3>Entre para o clube de D&D e tenha experiências de <span>outro mundo<span></span></h3>
 
           <div class="form-container">
-            <form action="">
+            <form>
               <label for="name">Nome Completo</label>
-              <input id="name" type="text" name="name">
-
+              <input type="text" name="name" id="txtName">
+          
               <label for="email">E-mail</label>
-              <input id="email" type="email" name="email">
-
+              <input type="email" name="email" id="txtEmail">
+          
               <label for="level">Level</label>
-              <input id="level" type="text" name="level">
-
+              <input type="number" name="level" id="txtLevel">
+          
               <label for="character">Personagem</label>
-              <textarea id="character" name="character" cols="30" rows="10"></textarea>
+              <textarea name="character" cols="30" rows="10" id="txtCharacter"></textarea>
             
-              <button>Me inscrever</button>
+              <button type="button" id="btnSubscribe">Me inscrever</button>
             </form>
           </div>
         </div>
@@ -127,7 +127,7 @@
       <img src="assets/images/footer/logo.svg" alt="">
     </footer>
 
-    <audio id="music" src="assets/musics/normal-world.mpeg" autoplay></audio>
+    <audio id="music" src="assets/musics/normal-world.mpeg"></audio>
 
     <script>
       window.addEventListener('click', function() {
@@ -149,5 +149,6 @@
         audio.volume = 0.2;
       }
     </script>
+     <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>
