@@ -59,6 +59,17 @@
   transform: rotateZ(180deg) scaleX(-1);
 }
 
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  background-color: #130404;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #cf0f0f;
+  border-radius: 1px;
+}
+
 /***  GENERIC STYLES ***/
 
 * {
