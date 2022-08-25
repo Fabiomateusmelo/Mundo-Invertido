@@ -1,18 +1,22 @@
-import { subscribeToHellfireClub } from './firebase/hellfire-club.js'
+import { subscribeToHellfireClube } from './data/hellfire-club.js'
 
-const txtName = document.getElementById('txtName')
-const txtEmail = document.getElementById('txtEmail')
-const txtLevel = document.getElementById('txtLevel')
-const txtCharacter = document.getElementById('txtCharacter')
-const btnSubscribe = document.getElementById('btnSubscribe')
-//debugger
+;(function main() {
+  const txtName = document.getElementById('txtName')
+  const txtEmail = document.getElementById('txtEmail')
+  const txtLevel = document.getElementById('txtLevel')
+  const txtCharacter = document.getElementById('txtCharacter')
 
-document.getElementById('btnSubscribe').addEventListener('click', () => {
-  const subscribe = {
-    name: txtName.value,
-    email: txtEmail.value,
-    level: txtLevel.value,
-    character: txtCharacter.value
-  }
-  subscribeToHellfireClub(subscribe)
-})
+  document
+    .getElementById('btnSubscribe')
+    .addEventListener('click', async () => {
+      const subscribe = {
+        name: txtName.value,
+        email: txtEmail.value,
+        level: txtLevel.value,
+        character: txtCharacter.value
+      }
+
+      const id = await subscribeToHellfireClube(subscribe)
+      alert(`Inscrição ${subscribe.name} adicionada com sucesso!`)
+    })
+})()
